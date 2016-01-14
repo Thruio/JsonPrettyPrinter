@@ -11,11 +11,14 @@
     "require": {},
     "require-dev": {
         "phpunit/phpunit": "*",
-        "codeclimate/php-test-reporter": "dev-master"
+        "codeclimate/php-test-reporter": "dev-master",
+        "squizlabs/php_codesniffer": "*"
     },
-    "autoload"   : {
-        "psr-0": {
-            "Thru\\JsonPrettyPrinter\\": ""
-        }
+
+    "autoload": {
+        "psr-4": {"Thru\\JsonPrettyPrinter\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": { "Thru\\JsonPrettyPrinter\\Tests\\": "tests/" }
     }
 }
